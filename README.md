@@ -2,17 +2,19 @@
 
 Web Init is a modern starter kit for developing websites which includes a preconfigured build process and a project structure that can be built upon.
 
-ESLint is included to enforce uniform and well-written code, but it is fully customizable through the *.eslintrc* file.
+ESLint and Prettier are included to enforce uniform and well-written code. Both are customizable through their respective configuration files.
+
+Git hooks are set up with Husky that format your files with Prettier and check for code errors with ESLint on commit.
 
 ## Includes
 
-* [SASS](http://sass-lang.com)
-* [PostCSS](http://postcss.org)
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [ESLint](https://eslint.org)
-* [Airbnb Style Guide](https://github.com/airbnb/javascript)
-* [Webpack 4](https://webpack.js.org)
-* [JQuery](https://jquery.com/)
+- [SASS](http://sass-lang.com)
+- [PostCSS](http://postcss.org)
+- [Autoprefixer](https://github.com/postcss/autoprefixer)
+- [ESLint](https://eslint.org)
+- [Airbnb Style Guide](https://github.com/airbnb/javascript)
+- [Webpack 4](https://webpack.js.org)
+- [JQuery](https://jquery.com/)
 
 ### Installation
 

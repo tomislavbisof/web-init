@@ -45,7 +45,6 @@ module.exports = merge(common, {
                 {
                   loader: 'css-loader',
                   options: {
-                    minimize: true,
                     sourceMap: false,
                   },
                 },
@@ -53,15 +52,17 @@ module.exports = merge(common, {
                   loader: 'postcss-loader',
                   options: {
                     ident: 'postcss',
-                    plugins: () => [autoprefixer({
-                      browsers: [
-                        '>1%',
-                        'last 4 versions',
-                        'Firefox ESR',
-                        'not ie < 9',
-                      ],
-                      flexbox: 'no-2009',
-                    })],
+                    plugins: () => [
+                      autoprefixer({
+                        browsers: [
+                          '>1%',
+                          'last 4 versions',
+                          'Firefox ESR',
+                          'not ie < 9',
+                        ],
+                        flexbox: 'no-2009',
+                      }),
+                    ],
                   },
                 },
                 'sass-loader',

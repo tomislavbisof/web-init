@@ -1,4 +1,11 @@
-html, body, h1, h2, h3, p, ul, li {
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -7,7 +14,11 @@ html, body, h1, h2, h3, p, ul, li {
   box-sizing: border-box;
 }
 
-body, input, select, textarea, button {
+body,
+input,
+select,
+textarea,
+button {
   font-family: 'Montserrat', sans-serif;
 }
 

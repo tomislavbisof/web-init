@@ -3,13 +3,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: [
-    './src/index.js',
-  ],
+  entry: ['./src/index.js'],
 
   resolve: {
     alias: {
-      ScrollMagicGSAP: 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap',
+      ScrollMagicGSAP:
+        'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap',
     },
     extensions: ['.js'],
     modules: ['src', 'node_modules'],

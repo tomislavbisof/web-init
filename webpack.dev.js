@@ -66,7 +66,6 @@ module.exports = merge(common, {
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: true,
                   sourceMap: true,
                 },
               },
@@ -74,14 +73,16 @@ module.exports = merge(common, {
                 loader: 'postcss-loader',
                 options: {
                   ident: 'postcss',
-                  plugins: () => [autoprefixer({
-                    browsers: [
-                      '>1%',
-                      'last 4 versions',
-                      'Firefox ESR',
-                      'not ie < 9',
-                    ],
-                  })],
+                  plugins: () => [
+                    autoprefixer({
+                      browsers: [
+                        '>1%',
+                        'last 4 versions',
+                        'Firefox ESR',
+                        'not ie < 9',
+                      ],
+                    }),
+                  ],
                 },
               },
               'sass-loader',
@@ -99,7 +100,5 @@ module.exports = merge(common, {
     ],
   },
 
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 });
